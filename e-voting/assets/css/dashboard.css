@@ -1,0 +1,184 @@
+body {
+  color: #494949;
+}
+
+.welcome {
+  margin-top: 10%;
+  border: 1px solid #ecebeb;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #e2e8f4;
+  color: #666464;
+  padding: 20px;
+}
+
+.badge {
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 8px;
+  background: #388ef5;
+}
+
+.suara {
+  position: absolute;
+  right: 30px;
+  top: 230px;
+  z-index: 999;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #a1bdf7;
+  box-shadow: 0 0 8px #adc5f6;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+  border: 1px solid #a1bdf7;
+  color: #474646;
+}
+
+input[type="file"] {
+  padding: 5px 5px;
+}
+
+.name {
+  padding-top: 10px;
+  text-align: center;
+  color: #4a4949;
+  font-size: 18px;
+}
+
+.kandidat {
+  min-height: 250px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.img {
+  width: 100%;
+  max-width: 110px;
+  max-height: 120px;
+  border-radius: 80%;
+  border: 3px solid #678bf6;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+
+#main {
+  margin-left: 200px;
+  padding-top: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #666666;
+}
+
+table tr td {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  vertical-align: middle;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #050c22;
+  border-right: 1px solid #eee;
+}
+
+#nav ul li {
+  list-style: none;
+}
+
+#nav ul li a {
+  color: #678bf6;
+  display: block;
+  padding: 10px 10px;
+}
+
+#nav ul li a:hover {
+  background: #0a1b50;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #050c22;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 0 7px #678bf6;
+  border: 1px solid #678bf6;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  text-decoration: none;
+  color: #333;
+}
+.dropdown-menu > li > a:hover {
+  background: #eee;
+}
+
+@media (min-width: 600px) {
+  .menu {
+    position: absolute;
+    display: block;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  #menu-toggle {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .menu {
+    position: relative;
+    display: none;
+  }
+
+  #nav {
+    position: relative;
+    display: inline;
+  }
+
+  .img {
+    display: none;
+  }
+}
